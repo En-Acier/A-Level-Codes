@@ -1,15 +1,18 @@
 import random
 
 def makeGrid():
+    #This function creates an empty grid
     for i in range(3):
         grid.append(["N/A","N/A","N/A",])
 
 def easyMove():
+    #The easy move algorithm will simply place a cross at random
     i = random.randint(0,2)
     j = random.randint(0,2)
     move = False
     while i <= 2 and move!= True:
         while j <= 2 and move!= True:
+            #This small statement 
             if grid[i][j] == "N/A":
                 grid[i][j] = "X"
                 move = True
